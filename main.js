@@ -125,10 +125,7 @@ function checkBallColliding(){
                 ball.position.y + ball.velocity.y <= leftPaddle.position.y + leftPaddle.height
             )){
             
-            ball.velocity.x -= 1
             ball.velocity.x *= -1
-            leftPaddle.speed += 0.5
-            rightPaddle.speed += 0.5
         }
         
     }else{
@@ -137,10 +134,8 @@ function checkBallColliding(){
                 ball.position.y + ball.velocity.y >= rightPaddle.position.y &&
                 ball.position.y + ball.velocity.y <= rightPaddle.position.y + rightPaddle.height
             )){
-            ball.velocity.x += 1
+
             ball.velocity.x *= -1
-            leftPaddle.speed += 0.5
-            rightPaddle.speed += 0.5
         }
         
     }
